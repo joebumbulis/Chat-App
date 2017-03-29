@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JoeBumMessenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Joe's Messenger</h1>
+        </header>
+
+        <div class="entry-page page">
+            <p class="welcome">Welcome to Joe's amazing web messenger app. Please sign with your username or create a new one.</p>
+            <input id="user-input" type="text" value="username">
+            <button id="sign-in-btn">SIGN IN</button>
+        </div>
+
+        <div class="hidden message-page page">
+            <div class="messages-container">
+                <ul id="messages-container">
+                </ul>
+
+            </div>
+            <div class="input-container">
+                <input class="message-input" type="text" value="">
+                <button class="send-btn">send</button>
+            </div>
+        </div>
+        <footer>
+            <h5>produced by Joe Bumbulis</h5>
+        </footer>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
