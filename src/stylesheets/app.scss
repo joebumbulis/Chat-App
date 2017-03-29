@@ -1,12 +1,3 @@
-// $big-font: 15rem;
-//
-// .jumbo {
-//     color: #333;
-//     font-size: $big-font;
-//     margin: 0;
-//     text-shadow: 1px 2px 1px #DEDEDE, 2px 3px 0 #FEFEFE, -1px -1px 0 #222;
-// }
-
 .hidden {
   display: none;
 };
@@ -68,7 +59,6 @@ button {
   background: #1A2980;
   color: #26D0CE;
   border: .1rem solid #26D0CE;
-
 }
 
 .welcome {
@@ -90,9 +80,11 @@ button {
   position: relative;
   .messages-container {
     background: #1A2980;
-    width: 80%;
+    max-width: 30rem;
     min-height: 30rem;
-
+    max-height: 30rem;
+    overflow: scroll;
+    margin: auto;
     ul {
       list-style: none;
     }
@@ -101,7 +93,6 @@ button {
       font-family: Inconsolata, sans-serif;
       font-size: 2rem;
       position: relative;
-      // background-color: #1A2980;
       .timestamp {
         color: #26D0CE;
         font-size: .8rem;
@@ -116,9 +107,8 @@ button {
   }
   .input-container {
     float: right;
-    margin-right: 15%;
-    // position: absolute;
-    // bottom: -26rem;
-    // margin-left: 20rem;
+    margin-right: 25%;
+    max-width: 30rem;
+
   }
 }

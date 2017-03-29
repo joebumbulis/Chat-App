@@ -8,11 +8,9 @@ export default function views() {
     url: url
   }
 
+
   $.ajax(settings).then(function(data, status, xhr){
     data.forEach(function(data, i, arr){
-      // let messageContainer = $('#messages-container')
-      // let messageList = $('<li class="message">`${item.message}`<button class="message-delete-btn" >X</button></li>');
-      // let deleteBtn = messageList.find('.message-delete-btn');
       let messageContainer = $('#messages-container');
       let messageList = $(`<li class="message">${data.body} <span class="timestamp">was sent by ${data.sender} at ${data.time}<span><button class="message-delete-btn">X</button></li>`);
       let deleteBtn = messageList.find('.message-delete-btn');
@@ -31,17 +29,10 @@ export default function views() {
       messageContainer.append(messageList);
     })
   })
-
-  // let settings = {
-  //   type: 'POST',
-  //   contentType: 'application/json',
-  //   url: url,
-  //   data: JSON.stringify {
-  //     body: msg;
-  //     sender: username;
-  //   }
-  // }
-
-
-
+  // setInterval (function(){
+  //   location = ''
+  //   // if (){
+  //   //
+  //   // } else {}
+  // }, 3000);
 }

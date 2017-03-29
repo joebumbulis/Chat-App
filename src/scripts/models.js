@@ -17,11 +17,15 @@ export default function models() {
     };
 
     $('#sign-in-btn').on('click', function(e) {
-        $('.entry-page').addClass('hidden');
-        $('.message-page').removeClass('hidden');
         const user = $('#user-input').val();
-        userOne = new Sessions(user);
         console.log(userOne);
+        if (user === ''){
+          alert('Please choose a username')
+        } else {
+          userOne = new Sessions(user);
+          $('.entry-page').addClass('hidden');
+          $('.message-page').removeClass('hidden');
+        }
     })
 
     $('.send-btn').on('click', function(e) {
@@ -56,6 +60,8 @@ export default function models() {
           })
         })
         messageContainer.append(message);
+        $('.message-input').val(' ');
+
       })
     })
 }
